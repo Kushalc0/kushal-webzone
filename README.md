@@ -25,4 +25,4 @@ This website highlights my work in:
 
 ## Contact Me
 Feel free to reach out for collaboration or queries!
-- 📧 Email: kushal@example.com
+- 📧 Email: kushalc2006@gmail.com
