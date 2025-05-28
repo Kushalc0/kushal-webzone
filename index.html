@@ -1,66 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kushal's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        section {
-            margin: 20px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kushal's Portfolio</title>
+<style>
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    padding: 30px 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+  }
+  header p {
+    margin-top: 8px;
+    font-size: 1.2rem;
+    color: #a0c4ff;
+  }
+  main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  section {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.3);
+  }
+  h2 {
+    color: #90caf9;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #90caf9;
+    padding-bottom: 6px;
+  }
+  p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  ul li {
+    background: #0d47a1;
+    margin-bottom: 12px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: default;
+    transition: background 0.3s ease;
+  }
+  ul li:hover {
+    background: #1565c0;
+  }
+  /* Video container for responsive embed */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  .video-container iframe, 
+  .video-container video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+  footer {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #0b0c10;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  a {
+    color: #82b1ff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
 
 <header>
-    <h1>Kushal's Portfolio</h1>
-    <p>Welcome to my portfolio website</p>
+  <h1>Kushal's Portfolio</h1>
+  <p>Welcome to my portfolio website</p>
 </header>
 
-<section>
+<main>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>Hi, I am Kushal. I am learning digital marketing and web development. This is my free portfolio site.</p>
-</section>
+    <p>Hi, I am Kushal. I am learning digital marketing and web development. This is my free portfolio site showcasing my work and skills.</p>
+  </section>
 
-<section>
+  <section id="projects">
     <h2>My Projects</h2>
-    <ul>
-        <li>Project 1 - Digital Marketing Campaign (Video Ad)</li>
-        <li>Project 2 - Promotional Video Ad for Fitness Center</li>
-        <li>Project 3 - Website Design (Cafe Poster)</li>
-        <li>Project 4 - Poster Design for Gym Opening</li>
-        <li>Project 5 - Blog Creation and Content Writing</li>
-    </ul>
-</section>
 
-<section>
+    <ul>
+      <li>
+        <strong>Digital Marketing Campaign (Video Ad)</strong>
+        <div class="video-container">
+          <!-- Replace the src with your own YouTube or Drive video link -->
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="Digital Marketing Video Ad" frameborder="0" 
+            allowfullscreen></iframe>
+        </div>
+      </li>
+      <li>
+        <strong>Promotional Video Ad for Fitness Center</strong>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" 
+            title="Fitness Center Video Ad" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </li>
+      <li>
+        <strong>Website Design (Cafe Poster)</strong><br />
+        <img src="https://via.placeholder.com/800x450?text=Cafe+Poster+Design" alt="Cafe Poster" style="width:100%; border-radius:8px;" />
+      </li>
+      <li>
+        <strong>Poster Design for Gym Opening</strong><br />
+        <img src="https://via.placeholder.com/800x450?text=Gym+Opening+Poster" alt="Gym Poster" style="width:100%; border-radius:8px;" />
+      </li>
+      <li>
+        <strong>Blog Creation and Content Writing</strong>
+        <p>Writeup and SEO-friendly blog posts on digital marketing topics.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: kushal@example.com</p>
-</section>
+    <p>Email: <a href="mailto:kushal@example.com">kushal@example.com</a></p>
+  </section>
+
+</main>
 
 <footer>
-    <p>&copy; 2025 Kushal's Portfolio. All rights reserved.</p>
+  <p>&copy; 2025 Kushal's Portfolio. All rights reserved.</p>
 </footer>
 
 </body>
